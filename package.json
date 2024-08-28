@@ -1,0 +1,24 @@
+{
+  "name": "def-sub",
+  "version": "1.0.0",
+  "description": "Def sub",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ralii/def-sub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ralii/def-sub/issues"
+  },
+  "homepage": "https://github.com/Ralii/def-sub#readme",
+  "dependencies": {
+    "shadow-cljs": "^2.28.14"
+  }
+}
