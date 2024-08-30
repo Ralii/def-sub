@@ -18,7 +18,7 @@ Define def-sub
 Call
 
 ``` clojure
-(subscription-name arg1)
+@(subscription-name arg1)
 
 ```
 
