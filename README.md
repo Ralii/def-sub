@@ -1,6 +1,6 @@
 # def-sub
 
-FIXME: description
+Macro that produces callable function from re-frame subscription. Advantages are that you will get function linting with arity, unused functions, typos in names and such.
 
 ## Installation
 
@@ -8,29 +8,32 @@ Download from http://example.com/FIXME.
 
 ## Usage
 
-FIXME: explanation
+Define def-sub
+``` clojure
+(def-sub subscription-name
+ (fn [db [_ arg1]]
+   ...))
+```
 
-    $ java -jar def-sub-0.1.0-standalone.jar [args]
+Call
 
-## Options
+``` clojure
+(subscription-name arg1)
 
-FIXME: listing of options this app accepts.
+```
 
-## Examples
+Subscriptions using other subscriptions
 
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
+``` clojure
+(def-sub another-subscription
+  (fn []
+    (subscription-name arg1))
+  (fn []
+    ...))
+```
 ## License
 
-Copyright © 2024 FIXME
+Copyright © 2024 Lari Saukkonen
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
