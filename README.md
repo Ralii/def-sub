@@ -4,7 +4,8 @@ Macro that produces callable function from re-frame subscription. Advantages are
 
 ## Installation
 
-Download from http://example.com/FIXME.
+[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.ralii/def-sub.svg)](https://clojars.org/org.clojars.ralii/def-sub)
+
 
 ## Usage
 
