@@ -1,5 +1,4 @@
-(ns def-sub.core
-  #?(:cljs (:require-macros [def-sub.core :refer [def-sub]])))
+(ns def-sub.core)
 
 (defn- fully-qualified-name
   [sym]
