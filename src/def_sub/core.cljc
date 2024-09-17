@@ -1,8 +1,9 @@
-(ns def-sub.core)
+(ns def-sub.core
+  #?(:cljs (:require-macros [def-sub.core :refer [def-sub]])))
 
 (defn- fully-qualified-name
   [sym]
-  (str ns "/" (name sym)))
+  (str *ns* "/" (name sym)))
 
 (defmacro def-sub [fn-name & sub-fns]
   (let [sub-fn-arguments (-> sub-fns last second rest first rest)]
